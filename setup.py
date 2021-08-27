@@ -5,11 +5,11 @@ from setuptools import find_packages, setup
 from slopecraftr import constants
 
 NAME = constants.PACKAGE_NAME
-VERSION = constants.VERSION
+VERSION = str(constants.VERSION)
 DESCRIPTION = constants.DESCRIPTION
-URL = constants.GITHUB_REPO
+URL = constants.REPOSITORY
 AUTHOR = constants.AUTHOR
-REQUIRES_PYTHON = '>=3.8.0'
+REQUIRES_PYTHON = f'>={constants.PYTHON_REQUIRED}'
 
 CLASSIFIERS = [
     # https://pypi.org/classifiers/
