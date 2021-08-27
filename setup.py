@@ -5,10 +5,10 @@ from setuptools import find_packages, setup
 from slopecraftr import constants
 
 NAME = constants.PACKAGE_NAME
-VERSION = str(constants.SEMVER)
-DESCRIPTION = 'Get your 3D map pixel art in minecraft'
-URL = 'https://github.com/Van-Nya-Stew/SlopeCraft'
-AUTHOR = 'Van_Nya'
+VERSION = constants.VERSION
+DESCRIPTION = constants.DESCRIPTION
+URL = constants.GITHUB_REPO
+AUTHOR = constants.AUTHOR
 REQUIRES_PYTHON = '>=3.8.0'
 
 CLASSIFIERS = [
