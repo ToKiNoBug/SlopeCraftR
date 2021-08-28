@@ -2,21 +2,22 @@
 
 [English](README.md "README.md") | **中文**  <!-- lang  -->
 
-> 生成在 Minecraft 中可用的 3D 地图像素画
+> 生成在 Minecraft 中可用的 3D / 2D / 纯文件 地图像素画
 
-SlopeCraftR（以下简称 SCR）是一个由 [ToKiNoBug](https://github.com/ToKiNoBug "@ToKiNoBug") 的 [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") **重写**而成，以 *尽可能高的色彩还原度* 将图片转化为 Minecraft 地图像素画，并导出为 *可在游戏内实装的原理图* 的工具
+SlopeCraftR（以下简称 SCR）是一个由 [ToKiNoBug](https://github.com/ToKiNoBug "@ToKiNoBug") 的 [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") **重写**而成，以 *尽可能高的色彩还原度* 将图片转化为 Minecraft 地图像素画，并导出为 *可在游戏内实装的原理图* 或者*地图数据文件*的工具
 
 ## 特点
 
 ### 功能
 
-- 以**地图**（`minecraft:map`）中的展示效果，而非像素画本身的观赏效果为目标
+- 以**地图**（`minecraft:filled_map`）中的展示效果，而非像素画本身的视觉效果为目标
 - 提供可深度自定义的方块列表以及若干预设
-- 提供多种色彩空间进行颜色转换
+- 提供多种算法将图像转化为地图画，尽量提升地图画的效果
 - 支持的导出格式
   - [地图文件](https://minecraft.fandom.com/zh/wiki/%E5%9C%B0%E5%9B%BE%E7%89%A9%E5%93%81%E6%A0%BC%E5%BC%8F "地图物品格式 - Minecraft Wiki")
   - [结构方块文件](https://minecraft.fandom.com/zh/wiki/%E7%BB%93%E6%9E%84%E6%96%B9%E5%9D%97%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F "结构方块文件格式 - Minecraft Wiki")
   - [投影原理图](https://github.com/maruohon/litematica "maruohon/litematica")
+  - [worldEdit原理图](https://github.com/EngineHub/WorldEdit "EngineHub/WorldEdit") (正在考虑)
 
 ### 开发
 
