@@ -2,21 +2,22 @@
 
 **English** | [中文](README_cn.md "README_cn.md")  <!-- lang  -->
 
-> Get your 3D map pixel art in Minecraft
+> Get your map pixel art (all kinds of!) in Minecraft
 
-SlopeCraftR (abbreviated as SCR) is a tool **rewritten** from [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") of [ToKiNoBug](https://github.com/ToKiNoBug "@ToKiNoBug"), which can convert pictures to Minecraft map pixel art with *as high as possible color reproduction*, and export as *schematic which can build in game*
+SlopeCraftR (abbreviated as SCR) is a tool **rewritten** from [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") of [ToKiNoBug](https://github.com/ToKiNoBug "@ToKiNoBug"), which can convert pictures to Minecraft map pixel art with *as high as possible color reproduction*, and export as *schematic which can build in game* or *map data file(s)*
 
 ## Features
 
 ### Functions
 
-- Aim at display effect of **map** (`minecraft:map`) instead of viewing effect of pixel art
+- Aim at display effect of **map** (`minecraft:filled_map`) instead of viewing effect of pixel art
 - Provide block lists which can deeply customize and some presets
-- Provide various color space to color-converting
+- Provide various algorithm to convert images to map pixel arts
 - Supported export format
   - [Map file](https://minecraft.fandom.com/wiki/Map_item_format "Map item format - Minecraft Wiki")
   - [Structure block file](https://minecraft.fandom.com/wiki/Structure_Block_file_format "Structure Block file format - Minecraft Wiki")
   - [Litematica mod schematic](https://github.com/maruohon/litematica "maruohon/litematica")
+  - [worldEdit mod schematic](https://github.com/EngineHub/WorldEdit "EngineHub/WorldEdit") (in consideration)
 
 ### Development
 
