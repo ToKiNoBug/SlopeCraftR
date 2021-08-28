@@ -9,6 +9,7 @@ VERSION = str(constants.VERSION)
 DESCRIPTION = constants.DESCRIPTION
 URL = constants.REPOSITORY
 AUTHOR = constants.AUTHOR
+LICENSE = constants.LICENSE
 REQUIRES_PYTHON = f'>={constants.PYTHON_REQUIRED}'
 
 CLASSIFIERS = [
@@ -45,6 +46,6 @@ setup(
     packages=find_packages(exclude=[]),
     install_requires=REQUIRED,
     include_package_data=True,
-    license='LGPL-3.0',
+    license=LICENSE,
     classifiers=CLASSIFIERS,
 )

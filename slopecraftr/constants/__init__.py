@@ -4,5 +4,5 @@ __all__ = [
     # basic
     'NAME', 'PACKAGE_NAME',
     'VERSION', 'PYTHON_REQUIRED',
-    'AUTHOR', 'REPOSITORY', 'DESCRIPTION'
+    'AUTHOR', 'REPOSITORY', 'DESCRIPTION', 'LICENSE'
 ]

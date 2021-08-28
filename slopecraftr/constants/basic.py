@@ -21,3 +21,4 @@ PYTHON_REQUIRED = VersionInfo(
 AUTHOR = 'Van_Nya'
 REPOSITORY = 'https://github.com/Van-Nya/SlopeCraftR'
 DESCRIPTION = 'Get your 3D map pixel art in minecraft'
+LICENSE = 'GPL-3.0'
