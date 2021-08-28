@@ -4,7 +4,7 @@
 
 > 生成在 Minecraft 中可用的 3D 地图像素画
 
-SlopeCraftR（以下简称 SCR）是一个由 @ToKiNoBug 的 [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") **重写**而成，以 *尽可能高的色彩还原度* 将图片转化为 Minecraft 地图像素画，并导出为 *可在游戏内实装的原理图* 的工具
+SlopeCraftR（以下简称 SCR）是一个由 [ToKiNoBug](https://github.com/ToKiNoBug "@ToKiNoBug") 的 [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") **重写**而成，以 *尽可能高的色彩还原度* 将图片转化为 Minecraft 地图像素画，并导出为 *可在游戏内实装的原理图* 的工具
 
 ## 特点
 
@@ -30,4 +30,4 @@ SlopeCraftR（以下简称 SCR）是一个由 @ToKiNoBug 的 [SlopeCraft](https:
 
 ## 警告
 
-SlopeCraftR 仍在开发中，并且由于开发者 @Van-Nya 的开发能力和空闲时间等因素影响，上述功能的实现均可能无限延迟 ~~（饼先摆在这，人先咕咕咕）~~
+SlopeCraftR 仍在开发中，并且由于开发者 [Van-Nya](https://github.com/Van-Nya "@Van-Nya") 的开发能力和空闲时间等因素影响，上述功能的实现均可能无限延迟 ~~（饼先摆在这，人先咕咕咕）~~

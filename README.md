@@ -4,7 +4,7 @@
 
 > Get your 3D map pixel art in Minecraft
 
-SlopeCraftR (abbreviated as SCR) is a tool **rewritten** from [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") of @ToKiNoBug, which can convert pictures to Minecraft map pixel art with *as high as possible color reproduction*, and export as *schematic which can build in game*
+SlopeCraftR (abbreviated as SCR) is a tool **rewritten** from [SlopeCraft](https://github.com/ToKiNoBug/SlopeCraft "ToKiNoBug/SlopeCraft") of [ToKiNoBug](https://github.com/ToKiNoBug "@ToKiNoBug"), which can convert pictures to Minecraft map pixel art with *as high as possible color reproduction*, and export as *schematic which can build in game*
 
 ## Features
 
@@ -30,4 +30,4 @@ See [here](https://minecraft.fandom.com/wiki/Map_item_format "Map item format - 
 
 ## Warning
 
-SLopeCraftR is still on development, and the implement of all functions above will delay indefinitely because of the poor developing skill and free time of developer @Van-Nya ~~(leave a todo list and keep lazy)~~
+SLopeCraftR is still on development, and the implement of all functions above will delay indefinitely because of the poor developing skill and free time of developer [Van-Nya](https://github.com/Van-Nya "@Van-Nya") ~~(leave a todo list and keep lazy)~~
