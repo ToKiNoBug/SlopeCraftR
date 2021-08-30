@@ -1,17 +1,17 @@
-from semver import VersionInfo
+from slopecraftr.utils import Version, PreRelease
 
 # Names
 NAME = 'SlopeCraftR'
 PACKAGE_NAME = NAME.lower()
 
 # Version Info
-VERSION = VersionInfo(
+VERSION = Version(
     major=0,
     minor=0,
     patch=0,
-    prerelease=''
+    prerelease=PreRelease()
 )
-REQUIRES_PYTHON = VersionInfo(
+REQUIRES_PYTHON = Version(
     major=3,
     minor=8
 )

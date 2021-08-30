@@ -1,12 +1,11 @@
 import sys
 
-from semver import VersionInfo
-
 from slopecraftr import constants, cli, gui
+from slopecraftr.utils import Version
 
 
 def environment_check():
-    python_version = VersionInfo(
+    python_version = Version(
         sys.version_info.major,
         sys.version_info.minor,
         sys.version_info.micro
