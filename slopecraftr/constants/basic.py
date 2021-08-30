@@ -11,6 +11,12 @@ VERSION = Version(
     patch=0,
     prerelease=PreRelease().alpha(2)
 )
+NEXT_VERSION = Version(
+    major=0,
+    minor=1,
+    patch=0,
+    prerelease=PreRelease().alpha(3)
+)
 REQUIRES_PYTHON = Version(
     major=3,
     minor=8
