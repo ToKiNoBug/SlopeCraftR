@@ -22,7 +22,7 @@ if os.getenv('CI', None) is not None:
     build_num = os.getenv('GITHUB_RUN_NUMBER', None)
     is_release = os.getenv('GITHUB_REF', '').startswith('refs/tags/v')
     if build_num is not None and not is_release:
-        VERSION.build = f'build.{build_num}'
+        VERSION.replace(build=f'build.{build_num}')
 
 here = os.path.abspath(os.path.dirname(__file__))
 
