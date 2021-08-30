@@ -9,7 +9,7 @@ VERSION = Version(
     major=0,
     minor=1,
     patch=0,
-    prerelease=PreRelease().alpha(1)
+    prerelease=PreRelease().alpha(2)
 )
 REQUIRES_PYTHON = Version(
     major=3,
