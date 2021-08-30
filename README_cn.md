@@ -1,5 +1,9 @@
 # SlopeCraftR
 
+[![Python Versions](https://img.shields.io/pypi/pyversions/SlopeCraftR.svg)](https://pypi.org/project/SlopeCraftR)
+[![PyPI Version](https://img.shields.io/pypi/v/SlopeCraftR.svg)](https://pypi.org/project/SlopeCraftR)
+[![License](https://img.shields.io/github/license/Van-Nya/SlopeCraftR.svg)](https://github.com/Van-Nya/SlopeCraftR/blob/master/LICENSE)
+
 [English](README.md "README.md") | **中文**  <!-- lang -->
 
 > 生成在 Minecraft 中可用的 3D / 2D / 纯文件 地图像素画

@@ -1,5 +1,9 @@
 # SlopeCraftR
 
+[![Python Versions](https://img.shields.io/pypi/pyversions/SlopeCraftR.svg)](https://pypi.org/project/SlopeCraftR)
+[![PyPI Version](https://img.shields.io/pypi/v/SlopeCraftR.svg)](https://pypi.org/project/SlopeCraftR)
+[![License](https://img.shields.io/github/license/Van-Nya/SlopeCraftR.svg)](https://github.com/Van-Nya/SlopeCraftR/blob/master/LICENSE)
+
 **English** | [中文](README_cn.md "README_cn.md")  <!-- lang -->
 
 > Get your map pixel art (all kinds of!) in Minecraft
