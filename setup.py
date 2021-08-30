@@ -4,13 +4,8 @@ from setuptools import find_packages, setup
 
 from slopecraftr import constants
 
-NAME = constants.PACKAGE_NAME
-VERSION = str(constants.VERSION)
-DESCRIPTION = constants.DESCRIPTION
-URL = constants.REPOSITORY
-AUTHOR = constants.AUTHOR
-LICENSE = constants.LICENSE
-REQUIRES_PYTHON = f'>={constants.PYTHON_REQUIRED}'
+VERSION = constants.VERSION
+REQUIRES_PYTHON = f'>={constants.REQUIRES_PYTHON}'
 
 CLASSIFIERS = [
     # https://pypi.org/classifiers/

@@ -12,10 +12,10 @@ def environment_check():
         sys.version_info.micro
     )
 
-    if python_version < constants.PYTHON_REQUIRED:
+    if python_version < constants.REQUIRES_PYTHON:
         raise RuntimeWarning(
             f'Python {python_version} is too old, '
-            f'at least {constants.PYTHON_REQUIRED} is required'
+            f'at least {constants.REQUIRES_PYTHON} is required'
         )
 
 
@@ -23,7 +23,7 @@ def main():
     environment_check()
     print(
         f'# {constants.NAME} v{constants.VERSION} is starting up',
-        f'# {constants.NAME} is open source at {constants.REPOSITORY}',
+        f'# {constants.NAME} is open source at {constants.REPOSITORY_URL}',
         f'# {constants.NAME} is on developing, it may have many bugs',
         sep='\n', end='\n' * 2
     )

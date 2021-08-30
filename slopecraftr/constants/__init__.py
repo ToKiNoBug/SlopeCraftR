@@ -1,8 +1,6 @@
-from slopecraftr.constants.basic import *
-
-__all__ = [
-    # basic
-    'NAME', 'PACKAGE_NAME',
-    'VERSION', 'PYTHON_REQUIRED',
-    'AUTHOR', 'REPOSITORY', 'DESCRIPTION', 'LICENSE'
-]
+from slopecraftr.constants.basic import (
+    NAME, PACKAGE_NAME,
+    VERSION, REQUIRES_PYTHON,
+    AUTHOR, AUTHOR_EMAIL,
+    REPOSITORY_URL, DESCRIPTION, LICENSE
+)
