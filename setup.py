@@ -37,7 +37,7 @@ with open(os.path.join(here, 'README.md'), encoding='utf8') as f:
 # ----------------------------------------------------------------
 
 setup(
-    name=constants.PACKAGE_NAME,
+    name=constants.NAME,
     version=str(VERSION),
     description=constants.DESCRIPTION,
     long_description=LONG_DESCRIPTION,
