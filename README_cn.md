@@ -1,6 +1,6 @@
 # SlopeCraftR
 
-[English](README.md "README.md") | **中文**  <!-- lang  -->
+[English](README.md "README.md") | **中文**  <!-- lang -->
 
 > 生成在 Minecraft 中可用的 3D / 2D / 纯文件 地图像素画
 

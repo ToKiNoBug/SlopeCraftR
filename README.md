@@ -1,6 +1,6 @@
 # SlopeCraftR
 
-**English** | [中文](README_cn.md "README_cn.md")  <!-- lang  -->
+**English** | [中文](README_cn.md "README_cn.md")  <!-- lang -->
 
 > Get your map pixel art (all kinds of!) in Minecraft
 
