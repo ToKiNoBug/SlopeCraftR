@@ -29,7 +29,7 @@ def main():
 
     if __name__ == '__main__':
         print(
-            f'Use command:',
+            'Use command:',
             f'- `python -m {cli.__name__}` for CLI',
             f'- `python -m {gui.__name__}` for GUI',
             sep='\n'
