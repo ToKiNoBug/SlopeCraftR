@@ -7,9 +7,9 @@ PACKAGE_NAME = NAME.lower()
 # Version Info
 VERSION = Version(
     major=0,
-    minor=0,
+    minor=1,
     patch=0,
-    prerelease=PreRelease()
+    prerelease=PreRelease().alpha(1)
 )
 REQUIRES_PYTHON = Version(
     major=3,
