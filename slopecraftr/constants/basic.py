@@ -9,7 +9,7 @@ VERSION = Version(
     major=0,
     minor=1,
     patch=0,
-    prerelease=PreRelease().alpha(2)
+    prerelease=PreRelease().alpha(3)
 )
 NEXT_VERSION = Version(
     major=0,
