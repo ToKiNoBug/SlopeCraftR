@@ -1,5 +1,2 @@
-from slopecraftr.utils.translate import *
-
-__all__ = [
-    'tr'
-]
+from slopecraftr.utils.translate import tr
+from slopecraftr.utils.version import Version, PreRelease
