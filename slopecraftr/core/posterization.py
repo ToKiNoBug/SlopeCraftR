@@ -58,8 +58,9 @@ def main():
     logging.basicConfig(level='INFO')
     # logging.basicConfig(level='DEBUG')
 
-    image_rgb = cv2.cvtColor(cv2.imread('../../testimages/photos/flower.jpg'), cv2.COLOR_BGR2RGB)
-    colors_rgb = np.array(usable_colors).astype(np.uint8)
+    logging.info(img_path := sys.argv[1])
+    image_rgb = cv2.cvtColor(cv2.imread(img_path), cv2.COLOR_BGR2RGB)
+    colors_rgb = np.array(USABLE_COLORS).astype(np.uint8)
     result_rgb = colors_rgb[simple_lab_euclid(image_rgb, colors_rgb)]
 
     fig, axs = plt.subplots(1, 2)
