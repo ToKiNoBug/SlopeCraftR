@@ -28,5 +28,6 @@ AUTHOR_EMAIL = 'nya@ruavan.one'
 
 # Project Info
 REPOSITORY_URL = 'https://github.com/Van-Nya/SlopeCraftR'
+GITHUB_API = 'https://api.github.com/repos/Van-Nya/SlopeCraftR/releases/latest'
 DESCRIPTION = 'Get your 3D map pixel art in minecraft'
 LICENSE = 'GPL-3.0'
