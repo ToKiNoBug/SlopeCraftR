@@ -1,7 +1,12 @@
-"""Defines things related to posterization of image.
+"""
+Defines things related to posterization of image.
 
 Posterization of an image entails the conversion of a continuous gradation of tone to several
-regions of fewer tones. -- from Wikipedia"""
+regions of fewer tones. -- from Wikipedia
+"""
+
+import sys
+
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
@@ -24,7 +29,8 @@ usable_colors = [[127, 178, 56], [247, 233, 163], [199, 199, 199], [255, 0, 0], 
 
 
 def simple_lab_euclid(image_rgb, colors_rgb):
-    """Weight-less and element-wise posterization in CIELAB color space with Euclid distancing.
+    """
+    Weight-less and element-wise posterization in CIELAB color space with Euclid distancing.
 
     Args:
         image_rgb (np.ndarray): Input image in RGB space and np.uint8 type.
@@ -44,7 +50,9 @@ def simple_lab_euclid(image_rgb, colors_rgb):
 
 
 def main():
-    """Entrypoint of posterization.py, mainly used as a simple showcase."""
+    """
+    Entrypoint of posterization.py, mainly used as a simple showcase.
+    """
     import logging
 
     logging.basicConfig(level='INFO')
