@@ -12,17 +12,21 @@ class LockedVersion(RuntimeError):
 class PreRelease:
     def __init__(self):
         self._locked = False
+        self._level = None
+        self._level_abbr = None
+        self._pre_ver = None
 
     def __call__(self, level: str, level_abbr: str, pre_ver: int, _valid: bool = False) -> 'PreRelease':
         if not _valid:
             raise InvalidCall(f'Invalid way to call {self}')
         if self._locked:
             raise LockedVersion(f'{self} is locked')
-        self._locked = True
-        self._level = level
-        self._level_abbr = level_abbr
-        self._pre_ver = pre_ver
-        return self
+        new = self.__class__()
+        new._locked = True
+        new._level = level
+        new._level_abbr = level_abbr
+        new._pre_ver = pre_ver
+        return new
 
     def alpha(self, ver) -> 'PreRelease':
         return self('alpha', 'a', ver, _valid=True)
@@ -52,9 +56,12 @@ class Version(VersionInfo):
         )
 
     def dev(self, dev_ver: int) -> 'Version':
-        self._build = f'dev.{dev_ver}'
-        self._pypi_build = f'.dev{dev_ver}'
-        return self
+        new = self.__class__(self.major, self.minor, self.patch)
+        new._prerelease = self._prerelease
+        new._pypi_pre = self._pypi_pre
+        new._build = f'dev.{dev_ver}'
+        new._pypi_build = f'.dev{dev_ver}'
+        return new
 
     def pypi(self) -> str:
         major, minor, patch = self.major, self.minor, self.patch
