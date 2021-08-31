@@ -1,11 +1,12 @@
-import pytest
+import unittest
 
 from slopecraftr import utils
 
 
-def test_num():
-    assert not utils.tr() is not None
+class TranslationTest(unittest.TestCase):
+    def test_num(self):
+        self.assertEqual(utils.tr(), None)
 
 
 if __name__ == '__main__':
-    pytest.main()
+    unittest.main()
