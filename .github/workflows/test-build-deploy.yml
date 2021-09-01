@@ -27,10 +27,10 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-${{ env.cache-name }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: pip-${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-${{ env.cache-name }}-
-            ${{ runner.os }}-pip-
+            pip-${{ runner.os }}-${{ env.cache-name }}-
+            pip-${{ runner.os }}-
 
       - name: Install Dependencies
         run: |
@@ -57,10 +57,10 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-${{ env.cache-name }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: pip-${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-${{ env.cache-name }}-
-            ${{ runner.os }}-pip-
+            pip-${{ runner.os }}-${{ env.cache-name }}-
+            pip-${{ runner.os }}-
 
       - name: Install Dependencies
         run: |
@@ -107,10 +107,10 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-${{ env.cache-name }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: pip-${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-${{ env.cache-name }}-
-            ${{ runner.os }}-pip-
+            pip-${{ runner.os }}-${{ env.cache-name }}-
+            pip-${{ runner.os }}-
 
       - name: Install Dependencies
         run: |
