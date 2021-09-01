@@ -74,7 +74,7 @@ jobs:
 
   assemble:
     runs-on: ubuntu-latest
-    name: Assemble a Dev Source Compressed File
+    name: Assemble a Dev Sources
     needs: test
 
     steps:
@@ -91,7 +91,7 @@ jobs:
           name: SlopeCraftR-dev-source-${{ github.sha }}
           path: ./
 
-  build-binaries:
+  executable-binaries:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -132,7 +132,7 @@ jobs:
 
   pypi-upload:
     runs-on: ubuntu-latest
-    name: Make and Upload a Package to (Test)PyPI
+    name: Upload Packages to (Test)PyPI
     needs: test
     if: github.event_name == 'push'
 
