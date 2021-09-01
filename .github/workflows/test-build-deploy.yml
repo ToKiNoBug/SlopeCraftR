@@ -44,7 +44,7 @@ jobs:
 
   flake8:
     runs-on: ubuntu-latest
-    name: Check Codes with flake8
+    name: Check Sources by flake8
     needs: test
 
     steps:
@@ -74,7 +74,7 @@ jobs:
 
   assemble:
     runs-on: ubuntu-latest
-    name: Assemble a Dev Sources
+    name: Assemble Dev Sources
     needs: test
 
     steps:
@@ -96,7 +96,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-    name: Build Executable Binaries on ${{ matrix.os }}
+    name: Build on ${{ matrix.os }}
     needs: test
 
     steps:
