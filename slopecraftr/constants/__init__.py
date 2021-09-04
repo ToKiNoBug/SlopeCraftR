@@ -4,3 +4,8 @@ from slopecraftr.constants.basic import (
     AUTHOR, AUTHOR_EMAIL,
     REPOSITORY_URL, GITHUB_API, DESCRIPTION, LICENSE
 )
+
+from slopecraftr.constants.runtime import (
+    PACKAGE_PATH, DEFAULT_LANGUAGE,
+    LANGUAGE_FILE_SUFFIX, COLOR_SPACE_FILE_SUFFIX
+)
