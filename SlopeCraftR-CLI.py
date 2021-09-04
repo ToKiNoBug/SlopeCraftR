@@ -1,6 +1,6 @@
 import sys
 
-from slopecraftr.cli.__main__ import main as cli_main
+from slopecraftr.__main__ import main
 
 if __name__ == '__main__':
-    sys.exit(cli_main())
+    sys.exit(main(*sys.argv[1:]))

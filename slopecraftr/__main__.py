@@ -1,4 +1,5 @@
 import sys
+from argparse import ArgumentParser
 
 from slopecraftr import constants, cli, gui
 from slopecraftr.utils import Version
@@ -6,9 +7,9 @@ from slopecraftr.utils import Version
 
 def environment_check():
     python_version = Version(
-        sys.version_info.major,
-        sys.version_info.minor,
-        sys.version_info.micro
+        major=sys.version_info.major,
+        minor=sys.version_info.minor,
+        patch=sys.version_info.micro
     )
 
     if python_version < constants.REQUIRES_PYTHON:
@@ -18,23 +19,39 @@ def environment_check():
         )
 
 
-def main():
+def main(*args: str):
     environment_check()
-    print(
-        f'# {constants.NAME} v{constants.VERSION} is starting up',
-        f'# {constants.NAME} is open source at {constants.REPOSITORY_URL}',
-        f'# {constants.NAME} is on developing, it may have many bugs',
-        sep='\n', end='\n' * 2
+    parser = ArgumentParser(
+        prog=constants.PACKAGE_NAME,
+        description=constants.NAME
     )
+    parser.add_argument('-v', '--version', action='version', version=f'{constants.NAME} v{constants.VERSION}')
+    subparsers = parser.add_subparsers(title='Command', help='Available commands', dest='subparser')
+    subparsers.add_parser('gui', help='Start GUI')
 
-    if __name__ == '__main__':
-        print(
-            'Use command:',
-            f'- `python -m {cli.__name__}` for CLI',
-            f'- `python -m {gui.__name__}` for GUI',
-            sep='\n'
-        )
+    parser_cli = subparsers.add_parser('cli', help='Start GUI')
+    parser_cli.add_argument('-l', '--language', )
+    parser_cli.add_argument('-i', '--input-pic', )
+    parser_cli.add_argument('-o', '--output-dir', )
+    parser_cli.add_argument('-s', '--color-space', )
+    parser_cli.add_argument('-t', '--block-table', )
+
+    subparsers_cli = parser_cli.add_subparsers(title='Options', dest='subparser_cli')
+    parser_cli_out = subparsers_cli.add_parser('out', help='Output Formats')
+    parser_cli_out.add_argument('--map')
+    parser_cli_out.add_argument('--structure-block')
+    parser_cli_out.add_argument('--worldedit')
+    parser_cli_out.add_argument('--litematica')
+
+    result = parser.parse_args(args)
+
+    if result.subparser == 'cli':
+        cli.entry()
+    elif result.subparser == 'gui':
+        gui.entry()
+    else:
+        parser.print_help()
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    sys.exit(main(*sys.argv[1:]))
