@@ -15,7 +15,7 @@ NEXT_VERSION = Version(
     major=0,
     minor=1,
     patch=0,
-    prerelease=PreRelease().alpha(5)
+    prerelease=PreRelease().beta(1)
 )
 REQUIRES_PYTHON = Version(
     major=3,
