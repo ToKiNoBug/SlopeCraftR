@@ -34,21 +34,20 @@ print('REQUIRED:\n', *REQUIRED, sep='- ')
 with open(os.path.join(here, 'README.md'), encoding='utf8') as f:
     LONG_DESCRIPTION = re.compile(r'(\n.*<!-- lang -->\n)').sub('', f.read())
 
-# ----------------------------------------------------------------
-
-setup(
-    name=constants.NAME,
-    version=VERSION.pypi(),
-    description=constants.DESCRIPTION,
-    long_description=LONG_DESCRIPTION,
-    long_description_content_type='text/markdown',
-    author=constants.AUTHOR,
-    author_email=constants.AUTHOR_EMAIL,
-    python_requires=REQUIRES_PYTHON,
-    url=constants.REPOSITORY_URL,
-    packages=find_packages(exclude=['tests', '*.tests', '*.tests.*', 'tests.*']),
-    install_requires=REQUIRED,
-    include_package_data=True,
-    license=constants.LICENSE,
-    classifiers=CLASSIFIERS,
-)
+if __name__ == '__main__':
+    setup(
+        name=constants.NAME,
+        version=VERSION.pypi(),
+        description=constants.DESCRIPTION,
+        long_description=LONG_DESCRIPTION,
+        long_description_content_type='text/markdown',
+        author=constants.AUTHOR,
+        author_email=constants.AUTHOR_EMAIL,
+        python_requires=REQUIRES_PYTHON,
+        url=constants.REPOSITORY_URL,
+        packages=find_packages(exclude=['tests', '*.tests', '*.tests.*', 'tests.*']),
+        install_requires=REQUIRED,
+        include_package_data=True,
+        license=constants.LICENSE,
+        classifiers=CLASSIFIERS,
+    )
