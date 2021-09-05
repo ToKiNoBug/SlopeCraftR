@@ -2,7 +2,7 @@ import sys
 from argparse import ArgumentParser
 
 from slopecraftr import constants, cli, gui
-from slopecraftr.utils import Version
+from slopecraftr.utils.version import Version
 
 
 def environment_check():

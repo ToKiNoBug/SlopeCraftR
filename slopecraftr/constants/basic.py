@@ -1,4 +1,4 @@
-from slopecraftr.utils import Version, PreRelease
+from slopecraftr.utils.version import Version, PreRelease
 
 # Names
 NAME = 'SlopeCraftR'
