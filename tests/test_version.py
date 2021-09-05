@@ -1,6 +1,6 @@
 import unittest
 
-from slopecraftr.utils import Version, PreRelease
+from slopecraftr.utils.version import Version, PreRelease
 from slopecraftr.utils.version import InvalidCall, LockedVersion
 
 
