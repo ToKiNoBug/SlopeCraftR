@@ -1,5 +1,6 @@
 import sys
 from argparse import ArgumentParser
+from locale import getdefaultlocale
 
 from slopecraftr import constants, cli, gui
 from slopecraftr.utils.version import Version
@@ -27,10 +28,11 @@ def main(*args: str):
     )
     parser.add_argument('-v', '--version', action='version', version=f'{constants.NAME} v{constants.VERSION}')
     subparsers = parser.add_subparsers(title='Command', help='Available commands', dest='subparser')
-    subparsers.add_parser('gui', help='Start GUI')
+    parser.add_argument('-l', '--language', default=getdefaultlocale()[0].lower())
+
+    parser_gui = subparsers.add_parser('gui', help='Start GUI')
 
     parser_cli = subparsers.add_parser('cli', help='Start GUI')
-    parser_cli.add_argument('-l', '--language', )
     parser_cli.add_argument('-i', '--input-pic', )
     parser_cli.add_argument('-o', '--output-dir', )
     parser_cli.add_argument('-s', '--color-space', )
@@ -44,11 +46,12 @@ def main(*args: str):
     parser_cli_out.add_argument('--litematica')
 
     result = parser.parse_args(args)
+    language = result.language
 
     if result.subparser == 'cli':
-        cli.entry()
+        cli.entry(language)
     elif result.subparser == 'gui':
-        gui.entry()
+        gui.entry(language)
     else:
         parser.print_help()
 
