@@ -2,7 +2,7 @@
 "CustomBlocks":[
 {
     "baseColor":15,
-    "id":"waxed_copper_slab[type=top,waterlogged=false]",
+    "id":"minecraft:waxed_copper_slab[type=top,waterlogged=false]",
     "nameZH":"涂蜡铜上半砖",
     "nameEN":"Waxed copper slab",
     "icon":"waxed_copper_block.png",
@@ -14,7 +14,7 @@
     "Hint1":"你可以按照这样的格式自定义添加新的方块，包括mod方块",
     "Hint2":"但必须遵守json格式",
     "Hint3":"baseColor是这种方块对应的基色，是必填项（非常非常重要！！！！！！！）",
-    "Hint4":"id是这种方块的id，也是必填项，最好附带完整的方块状态，但不要加minecraft:前缀",
+    "Hint4":"id是这种方块的id，也是必填项，最好附带完整的方块状态，一定要有形如minecraft:的命名空间前缀",
     "Hint5":"nameZH是方块中文名称，必填",
     "Hint6":"nameEN是方块英文名称，必填",
     "Hint7":"icon是方块对应图片的文件名，它应当放在CustomBlocks文件夹下",
@@ -27,7 +27,7 @@
 },
 {
     "baseColor":15,
-    "id":"waxed_cut_copper_slab[type=top,waterlogged=false]",
+    "id":"minecraft:waxed_cut_copper_slab[type=top,waterlogged=false]",
     "nameZH":"涂蜡切制铜上半砖",
     "nameEN":"Waxed cut copper slab",
     "icon":"waxed_cut_copper.png",
@@ -39,7 +39,7 @@
     "Hint1":"You can add your custom block in such format, including mod-blocks.",
     "Hint2":"But always remember to follow json format",
     "Hint3":"baseColor is the base color of this block on map, a compulsory item(EXTREMELY IMPORTANT!!!!)",
-    "Hint4":"id is the block id with full blockstatus, but without minecraft: prefix. Compulsory item.",
+    "Hint4":"id is the block id with full blockstatus, remember not to lose namespace prefix like minecraft: . Compulsory item.",
     "Hint5":"nameZH is the Chinese name. Compulsory item.",
     "Hint6":"nameEN is the English name. Compulsory item.",
     "Hint7":"icon is the image filename correspoing to this block, the image should be put under CustomBlocks directory.",
@@ -52,7 +52,7 @@
 },
 {
     "baseColor":11,
-    "id":"stone_slab[type=top,waterlogged=false]",
+    "id":"minecraft:stone_slab[type=top,waterlogged=false]",
     "nameZH":"石头上半砖",
     "nameEN":"Stone slab",
     "icon":"stone.png",
@@ -63,7 +63,7 @@
 },
 {
     "baseColor":2,
-    "id":"sandstone_slab[type=top,waterlogged=false]",
+    "id":"minecraft:sandstone_slab[type=top,waterlogged=false]",
     "nameZH":"砂岩上半砖",
     "nameEN":"Sandstone slab",
     "icon":"smooth_sandstone.png",
@@ -74,7 +74,7 @@
 },
 {
     "baseColor":11,
-    "id":"cobblestone_slab[type=top,waterlogged=false]",
+    "id":"minecraft:cobblestone_slab[type=top,waterlogged=false]",
     "nameZH":"圆石上半砖",
     "nameEN":"Cobblestone slab",
     "icon":"cobblestone.png",
@@ -85,7 +85,7 @@
 },
 {
     "baseColor":0,
-    "id":"redstone_lamp[lit=false]",
+    "id":"minecraft:redstone_lamp[lit=false]",
     "nameZH":"红石灯",
     "nameEN":"Redstone lamp",
     "icon":"redstone_lamp.png",
@@ -96,7 +96,7 @@
 },
 {
     "baseColor":28,
-    "id":"brick_slab[type=top,waterlogged=false]",
+    "id":"minecraft:brick_slab[type=top,waterlogged=false]",
     "nameZH":"砖块上半砖",
     "nameEN":"Brick slab",
     "icon":"bricks.png",
@@ -107,7 +107,7 @@
 },
 {
     "baseColor":11,
-    "id":"stone_brick_slab[type=top,waterlogged=false]",
+    "id":"minecraft:stone_brick_slab[type=top,waterlogged=false]",
     "nameZH":"石砖上半砖",
     "nameEN":"Stonebrick slab",
     "icon":"stone_bricks.png",
@@ -118,7 +118,7 @@
 },
 {
     "baseColor":35,
-    "id":"nether_brick_slab[type=top,waterlogged=false]",
+    "id":"minecraft:nether_brick_slab[type=top,waterlogged=false]",
     "nameZH":"地狱砖块上半砖",
     "nameEN":"Nether brick slab",
     "icon":"nether_bricks.png",
@@ -129,7 +129,7 @@
 },
 {
     "baseColor":14,
-    "id":"quartz_slab[type=top,waterlogged=false]",
+    "id":"minecraft:quartz_slab[type=top,waterlogged=false]",
     "nameZH":"石英上半砖",
     "nameEN":"Quartz slab",
     "icon":"quartz_block.png",
@@ -140,7 +140,7 @@
 },
 {
     "baseColor":13,
-    "id":"oak_slab[type=top,waterlogged=false]",
+    "id":"minecraft:oak_slab[type=top,waterlogged=false]",
     "nameZH":"橡木上半砖",
     "nameEN":"Oak slab",
     "icon":"oak_planks.png",
@@ -151,7 +151,7 @@
 },
 {
     "baseColor":34,
-    "id":"spruce_slab[type=top,waterlogged=false]",
+    "id":"minecraft:spruce_slab[type=top,waterlogged=false]",
     "nameZH":"云杉木上半砖",
     "nameEN":"Spruce slab",
     "icon":"spruce_planks.png",
@@ -162,7 +162,7 @@
 },
 {
     "baseColor":2,
-    "id":"birch_slab[type=top,waterlogged=false]",
+    "id":"minecraft:birch_slab[type=top,waterlogged=false]",
     "nameZH":"白桦木上半砖",
     "nameEN":"Birch slab",
     "icon":"birch_planks.png",
@@ -173,7 +173,7 @@
 },
 {
     "baseColor":10,
-    "id":"jungle_slab[type=top,waterlogged=false]",
+    "id":"minecraft:jungle_slab[type=top,waterlogged=false]",
     "nameZH":"丛林木上半砖",
     "nameEN":"Jungle slab",
     "icon":"jungle_planks.png",
@@ -184,7 +184,7 @@
 },
 {
     "baseColor":15,
-    "id":"acacia_slab[type=top,waterlogged=false]",
+    "id":"minecraft:acacia_slab[type=top,waterlogged=false]",
     "nameZH":"金合欢木上半砖",
     "nameEN":"Acacia slab",
     "icon":"acacia_planks.png",
@@ -195,7 +195,7 @@
 },
 {
     "baseColor":26,
-    "id":"dark_oak_slab[type=top,waterlogged=false]",
+    "id":"minecraft:dark_oak_slab[type=top,waterlogged=false]",
     "nameZH":"黑橡木上半砖",
     "nameEN":"Dark oak slab",
     "icon":"dark_oak_planks.png",
@@ -206,7 +206,7 @@
 },
 {
     "baseColor":15,
-    "id":"red_sandstone_slab[type=top,waterlogged=false]",
+    "id":"minecraft:red_sandstone_slab[type=top,waterlogged=false]",
     "nameZH":"红砂岩上半砖",
     "nameEN":"Red sandstone slab",
     "icon":"smooth_red_sandstone.png",
@@ -217,7 +217,7 @@
 },
 {
     "baseColor":16,
-    "id":"purpur_slab[type=top,waterlogged=false]",
+    "id":"minecraft:purpur_slab[type=top,waterlogged=false]",
     "nameZH":"紫珀上半砖",
     "nameEN":"Purpur slab",
     "icon":"purpur_block.png",
